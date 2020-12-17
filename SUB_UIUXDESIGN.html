@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX DESIGN</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135203751-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-135203751-1');
+    </script>
+    <link href="css/style_pc.css" rel="stylesheet" media="all">
+    <link href="css/style_sp.css" rel="stylesheet" media="screen and (max-width: 599px)">
+    <link rel="stylesheet" href="https://use.typekit.net/fgw7kgu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #navi {right: 5rem;}
+        #navi .target {position: fixed; color: #fff; font-size: 0.7rem; right: 2.5rem; top: 5rem; text-align: right; font-weight: normal; font-family: 'BM DoHyeon'; z-index: 2; }
+        #navi .target li {margin-bottom: 10px;}
+        .wb_dot_bg {background: url(../images/dot.gif); opacity: .08; left: 0; top: 0; position: absolute; height: 100%; width: 100%;}
+        #main .home_bt {position: relative; top: 0; left: 0; width: 100%; z-index: 2;}
+        #main .home_bt img {position: absolute; top: 2.5rem; left: 3%;}
+        #main {display: block; width: 100%; height: 100vh; position: relative;}
+        #main .bg_box {width: 98%; height: 96vh; background:#fee984; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+        #main .bg_box .img {width: 100%; height: 100%; background: url(images/design.png); background-repeat:no-repeat; background-position: center; background-size: cover;}
+        #main h2 {font-size: 2rem; color: #fff; text-shadow: 4px 4px 2px #cab755; font-family: 'BM DoHyeon'; position: absolute; top: 73%; left: 50%; transform: translate(-50%, -50%);}
+        #main .main-button .text {font-size: 1rem; color: #e7a922; font-weight: 600; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);}
+        #main .main-button .text:before {content: ""; width: 10px; height:2px; top: 171%; left: 30%; transform: rotate(30deg) translateY(-50%); position: absolute; background: #e7a922;}
+        #main .main-button .text:after {content: ""; width: 10px; height:2px; top: 171%; right: 22%; transform: rotate(-30deg) translateY(-50%); position: absolute; background: #e7a922;}
+
+        #main .main-button {width:100px; height:94px; overflow: visible; position: relative; top: 85%; left: 50%; transform: translate(-50%, -50%);}
+        #main .main-button .gooey {transform-style: preserve-3d; outline: 1px solid transparent; will-change: border-radius; background: rgba(255, 255, 255, 0.336);}
+        #main .main-button .gooey,
+        #main .main-button .gooey:before,
+        #main .main-button .gooey:after {border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; position: absolute; top:0; left: 0; right: 0; width:100%; height:100%; animation: morph 3s linear infinite;}
+        #main .main-button .gooey:before {background-color: rgba(255, 255, 255, 0.425); opacity: 1; animation-duration: 1.5s;}
+        #main .main-button .gooey:after {background-color: rgba(255, 255, 255, 0.623);}
+        #main .main-button .gooey {transform-style: preserve-3d;outline: 1px solid transparent;will-change: border-radius;}
+        #main .main-button .gooey:before,
+        #main .main-button .gooey:after {content: ''; display: block; will-change: border-radius, transform, opacity; animation-delay: 200ms;}
+        #main .main-button .gooey:before{opacity:1;animation-duration: 1.5s;}
+        #main .main-button .gooey:after{animation-delay: 400ms;}
+        @keyframes morph{
+        0%,100% {border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; transform: translate3d(0,0,0) rotateZ(0.01deg);}
+        34% {border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%; transform:  translate3d(0,5px,0) rotateZ(0.01deg);}
+        50% {opacity: .89; transform: translate3d(0,0,0) rotateZ(0.01deg);}
+        67% {border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ; transform: translate3d(0,-3px,0) rotateZ(0.01deg);}
+        }
+        @keyframes fadeIn{
+        100% {transform: scale(1.03); opacity: 0;}
+        }
+
+        .sec_01 {display: block; width: 100%; height: 100vh; background: #fefffa; position: relative;}  
+        .sec_01 .bg_box {width: 98%; height: 68.84vh; background: #f6cb6f; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);}
+        .sec_01 .bg_box h2 {color : #fff; width: 184px; height: 67px; line-height: 67px; position: absolute; left: 50%; top: 5%; transform: translateX(-50%); border-bottom: 3px solid #fff; text-align: center; font-size: 2rem;}
+        .sec_01 .mokup img {position: absolute; top: 52%; left: 50%; transform: translate(-50%, -50%);}
+        .sec_01 .detail {margin-top: 40px; position: absolute; left: 50%; top: 87%; transform: translate(-50%, -50%); color: #ffbe46; text-align: center; font-weight: 600;}
+        .sec_01 .detail .dt_line {position: absolute; width: 40px; height: 2px; background: #ffbe46; top: -20px; left: 50%; transform: translateX(-50%);}
+        .sec_01 .detail span {display: block; margin-bottom: 10px;}
+        .sec_01 .detail_bt > div {display: inline-block;}
+        .sec_01 .detail_bt a {display: block; margin-top: 10px; width: 170px; height: 45px; border: 2px solid #ffbe46; line-height: 45px; border-radius: 50px; transition:all .4s;}
+        .sec_01 .detail_bt a:hover {color: #fff; background: #ffbe46;}
+        
+        .sec_02 {display: block; width: 100%; height: 100vh; background: #fefffa; position: relative;}    
+        .sec_02 .bg_box {width: 98%; height: 68.84vh; background: #db532e; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);}
+        .sec_02 .bg_box h2 {color : #fff; width: 257px; height: 67px; line-height: 67px; position: absolute; left: 50%; top: 5%; transform: translateX(-50%); border-bottom: 3px solid #fff; text-align: center; font-size: 2rem;}
+        .sec_02 .mokup img {position: absolute; top: 52%; left: 50%; transform: translate(-50%, -50%);}
+        .sec_02 .detail {margin-top: 40px; position: absolute; left: 50%; top: 87%; transform: translate(-50%, -50%); color: #db532e; text-align: center; font-weight: 600;}
+        .sec_02 .detail .dt_line {position: absolute; width: 40px; height: 2px; background: #db532e; top: -20px; left: 50%; transform: translateX(-50%);}
+        .sec_02 .detail span {display: block; margin-bottom: 10px;}
+        .sec_02 .detail_bt > div {display: inline-block;}
+        .sec_02 .detail_bt a {display: block; margin-top: 10px; width: 170px; height: 45px; border: 2px solid #db532e; line-height: 45px; border-radius: 50px; transition:all .4s;}
+        .sec_02 .detail_bt a:hover {color: #fff; background: #db532e;}
+       
+        .sec_03 {display: block; width: 100%; height: 100vh; background: #fefffa; position: relative;}    
+        .sec_03 .bg_box {width: 98%; height: 68.84vh; background: #362e2b; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);}
+        .sec_03 .bg_box h2 {color : #fff; width: 257px; height: 67px; line-height: 67px; position: absolute; left: 50%; top: 5%; transform: translateX(-50%); border-bottom: 3px solid #fff; text-align: center; font-size: 2rem;}
+        .sec_03 .mokup img {position: absolute; top: 52%; left: 50%; transform: translate(-50%, -50%);}
+        .sec_03 .detail {margin-top: 40px; position: absolute; left: 50%; top: 87%; transform: translate(-50%, -50%); color: #362e2b; text-align: center; font-weight: 600;}
+        .sec_03 .detail .dt_line {position: absolute; width: 40px; height: 2px; background: #362e2b; top: -20px; left: 50%; transform: translateX(-50%);}
+        .sec_03 .detail span {display: block; margin-bottom: 10px;}
+        .sec_03 .detail_bt > div {display: inline-block;}
+        .sec_03 .detail_bt a {display: block; margin-top: 10px; width: 170px; height: 45px; border: 2px solid #362e2b; line-height: 45px; border-radius: 50px; transition:all .4s;}
+        .sec_03 .detail_bt a:hover {color: #fff; background: #362e2b;}
+  
+        @media (max-width: 768px){
+            #main h2 {font-size: 1.6rem;}
+            #main .home_bt img {left: 8%;}
+            .sec_01 .detail {top: 77%;}
+            .sec_01 .detail_bt a {width: 150px; font-size: 0.9rem; height: 35px; line-height: 35px;}
+            .sec_01 .bg_box h2 {width: 122px; font-size: 1.4rem;}
+            .sec_01 .bg_box {height: 56vh; top: 33%;}
+            .sec_01 .mokup img {width: 90%; top: 50%;}
+
+            .sec_02 .detail {top: 77%;}
+            .sec_02 .detail_bt a {width: 150px; font-size: 0.9rem; height: 35px; line-height: 35px;}
+            .sec_02 .bg_box h2 {width: 180px; font-size: 1.4rem;}
+            .sec_02 .bg_box {height: 56vh; top: 33%;}
+            .sec_02 .mokup img {width: 69%; top: 50%;}
+
+            .sec_03 .detail {top: 77%;}
+            .sec_03 .detail_bt a {width: 150px; font-size: 0.9rem; height: 35px; line-height: 35px;}
+            .sec_03 .bg_box h2 {width: 143px; font-size: 1.4rem;}
+            .sec_03 .bg_box {height: 56vh; top: 33%;}
+            .sec_03 .mokup img {width: 90%; top: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-follower pc"></div>
+    <div class="cursor pc"></div>
+    <nav id="navi">
+        <div class="btn">
+            <span class="line_01"></span>
+            <span class="line_02"></span>
+            <span class="line_03"></span>
+        </div>
+        <div id="menu">
+            <button class="close"></button>
+            <div class="menu_bg"></div>
+            <div class="menu">
+                <div class="menu_cont">
+                    <span></span>
+                    <h2>CONTACT</h2>
+                    <ul>
+                        <li class="name_icon">Parkjuhee</li>
+                        <li class="tel_icon">010 - 8007 - 2935</li>
+                        <li class="email_icon">wxvvk123 @ naver.com</li>
+                    </ul>
+                </div>
+                <div class="nav_menu">
+                    <ul>
+                        <li><a href="SUB_UIUXDESIGN.html">UI/UX DESIGN<span></span></a></li>
+                        <li><a href="SUB_WEBPUBLISHING.html">WEB PUBLISHING<span></span></a></li>
+                        <li><a href="">CONTACT<span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class='quick'><ul></ul></div>
+        <div id="main" class="section full1" >
+            <div class="home_bt">
+                <a href="index.html"><img src="images/logo.png" alt="로고이미지"></a>
+            </div>
+            <div class="bg_box">
+                <div class="img"></div>
+                <h2>UI/UX DESIGN</h2>
+            </div>
+            <div class="wb_dot_bg"></div>
+            <div class="main-button">
+                <span class="gooey"></span>
+                <span class="text">scroll</span>
+            </div>
+        </div>
+        <div class="sec_01 section full2" id="sec_01">
+            <div class="bg_box">
+                <h2>YOU IN ME</h2>
+            </div>
+            <div class="wb_dot_bg"></div>
+            <div class="mokup fade-in">
+                <img src="images/Y_mokup.png" alt="YIM목업이미지">
+            </div>
+
+            <div class="detail">
+                <span class="dt_line"></span>
+                <span>YOU IN ME APP</span>
+                <span>기존의 SNS 어플에 사용자의 니즈를 더한 소셜서비스</span>
+                <div class="detail_bt">
+                    <div class="view_plan">
+                        <a href="int/youinme_int.html">VIEW DETAIL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec_02 section full3" id="sec_02">
+            <div class="bg_box">
+                <h2>CHOCOSUNNY</h2>
+            </div>
+            <div class="wb_dot_bg"></div>
+            <div class="mokup fade-in">
+                <img src="images/dt_mokup.png" alt="랜딩페이지이미지">
+            </div>
+
+            <div class="detail">
+                <span class="dt_line"></span>
+                <span>초코써니 수제청 상세페이지</span>
+                <span>일러스트와 포토샵을 이용하여 제작한 상세페이지</span>
+                <div class="detail_bt"> 
+                    <div class="view_plan">
+                        <a href="int/detailpg_int.html">VIEW DETAIL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec_03 section full3" id="sec_03">
+            <div class="bg_box">
+                <h2>BASKINROBBINS</h2>
+            </div>
+            <div class="wb_dot_bg"></div>
+            <div class="mokup fade-in">
+                <img src="images/br_mokup.png" alt="랜딩페이지이미지">
+            </div>
+
+            <div class="detail">
+                <span class="dt_line"></span>
+                <span>배스킨라빈스 랜딩페이지</span>
+                <span>브랜드의 아이덴티디를 기반으로 디자인</span>
+                <div class="detail_bt"> 
+                    <div class="view_plan">
+                        <a href="int/br_int.html">VIEW DETAIL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/top.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
